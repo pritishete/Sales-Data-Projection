@@ -2,7 +2,7 @@
 
 # Sales Data Projection
 
-It is near real time Change Data Capture (CDC) sales data ingestion pipeline where eventbridge pipe capture the real time data in DynamoDB and push into the kinesis stream which delivers the data to the kinesis firehose which dumps the transformed data with the help of lambda in no batch files into amazon S3 bucket on top of it Athena table is getting created to sync data in near real time for further data analysis
+It is a near real time Change Data Capture (CDC) sales data ingestion pipeline where eventbridge pipe capture the real time data in DynamoDB and push into the kinesis stream which delivers the data to the kinesis firehose which dumps the transformed data with the help of lambda in no batch files into amazon S3 bucket on top of it Athena table is getting created to sync data in near real time for further data analysis
 
 ## Tech stack used:
     1. Python Mock generator script
