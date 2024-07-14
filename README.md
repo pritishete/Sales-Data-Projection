@@ -38,7 +38,7 @@ Search amazon data firehose -> create delivery stream -> select source as Amazon
 ### Step6: Set up Lambda
 Search lambda -> create function as "stream transformation" -> copy the code present in transformation_layer_with_lambda.py ,will get data from firehose as all in single line {r1},{r2},{r3} later crawler will not able to read it properly to avoid that will add newline in between records using lambda function it will convert records like {r1}\
                                              {r2}\
-                                             {r3}\
+                                             {r3}
 
 to apply lambda transformation -> enable data transformation property -> select already created "stream transformation" lambda function ->create bucket of sales-data-projection-outcome -> choose created bucket as destination -> set up hints,compression and encryption setting -> we want firehose should create batch,till how long it should wait to create next new batch so set up buffer size and buffer interval according to incoming data size ->click on create firehose delivery stream
 Now start the mock data script -> so it will generate data in realtime-> event bridge will capture it-> put incoming data into kinesis stream-> firehose will batch it-> lambda will do transformation and dump the transformed data into S3 bucket,refresh S3 bucket will see different output files get added in S3 
