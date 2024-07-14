@@ -17,6 +17,9 @@ It is a near real time Change Data Capture (CDC) sales data ingestion pipeline w
 
 ## Architecture of data pipeline:
 
+![architecture diagram](https://github.com/user-attachments/assets/12cd4a54-2d45-4fc3-b5cc-5968d1d900f7)
+
+
 ## Steps to design a pipeline:
 
 ### Step1 : Set up DynamoDB and DynamoDB stream
