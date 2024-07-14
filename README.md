@@ -24,7 +24,9 @@ It is near real time Change Data Capture (CDC) sales data ingestion pipeline whe
     2. Run the python mock data generation script (mock_data_generator_for_dynamodb.py) which will generate and insert the new records into the DynamoDB table
     
     DynamoDB table creation
-    ![create_dynamodb_table](https://github.com/user-attachments/assets/37bb2cda-f101-4c40-b639-99d9da2826a9)
+    
+  ![create_dynamodb_table](https://github.com/user-attachments/assets/c33ee3e7-5b52-4789-8917-39cd56792b61)
+
 
     After running mock data generation python script data get inserted into dynamoDB table
     ![data_get_inserted_into_dynamodb_table](https://github.com/user-attachments/assets/14b0cfde-b652-4ad4-8c37-b1b685f43f5b)
